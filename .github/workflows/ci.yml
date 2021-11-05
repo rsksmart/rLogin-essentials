@@ -13,14 +13,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js 10.x
+    - name: Use Node.js 14.x
       uses: actions/setup-node@v1
       with:
-        node-version: 10.x
+        node-version: 14.x
     - run: npm i
-    - run: npm run test:coverage
     - run: npm run lint
-    - name: Coveralls
-      uses: coverallsapp/github-action@master
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+    - run: npm run test
+    - run: npm run build
+    - run: npm publish --dry-run
