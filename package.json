@@ -1,7 +1,7 @@
 {
   "name": "@rsksmart/rlogin-essentials",
   "version": "1.0.0",
-  "description": "RIF Web SDK Template",
+  "description": "rLogin essentials",
   "main": "dist/index.js",
   "declarations": "dist/index.d.ts",
   "files": [
@@ -16,18 +16,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rsksmart/rif-web-sdk-template.git"
+    "url": "git+https://github.com/rsksmart/rLogin-essentials.git"
   },
   "keywords": [
     "rsk",
-    "rif"
+    "rif",
+    "rlogin
   ],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rsksmart/rif-web-sdk-template/issues"
+    "url": "https://github.com/rsksmart/rLogin-essentials/issues"
   },
-  "homepage": "https://github.com/rsksmart/rif-web-sdk-template#readme",
+  "homepage": "https://github.com/rsksmart/rLogin-essentials#readme",
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "@typescript-eslint/eslint-plugin": "^4.23.0",
