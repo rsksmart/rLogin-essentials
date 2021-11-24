@@ -32,7 +32,7 @@ export const createRLogin = (rpcUrls = rskRpcUrls, trezorOptions = rifTrezorOpti
       package: WalletConnectProvider,
       options: {
         rpc: rpcUrls,
-        bridge: 'http://localhost:5000/'
+        bridge: 'https://walletconnect-bridge.rifos.org/'
       }
     },
     'custom-ledger': ledgerProviderOptions,
