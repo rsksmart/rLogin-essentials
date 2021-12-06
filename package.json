@@ -1,5 +1,5 @@
 {
-  "name": "@rsksmart/rlogin-essentials",
+  "name": "jesse-essentials",
   "version": "1.0.1",
   "description": "rLogin essentials",
   "main": "dist/index.js",
