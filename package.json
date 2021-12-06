@@ -1,6 +1,6 @@
 {
   "name": "jesse-essentials",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "rLogin essentials",
   "main": "dist/index.js",
   "declarations": "dist/index.d.ts",
