@@ -18,7 +18,7 @@ describe('createRLogin', () => {
         supportedChainsMock(opts?.supportedChains)
 
         // options to test values:
-        opts?.providerOptions['custom-trezor'] &&
+        opts && opts.providerOptions && opts.providerOptions['custom-trezor'] &&
           trezorOptionMock(opts?.providerOptions['custom-trezor'].options)
         portisOptionMock(opts?.providerOptions?.portis?.options?.id)
       })
