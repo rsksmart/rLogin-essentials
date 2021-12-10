@@ -17,7 +17,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 14.x
-    - run: yarn
+    - run: sed -i 's/ssh:/https:/g' ./package-lock.json # avoid issue caused by using ssh from github actions
+    - run: npm i
     - run: npm run lint
     - run: npm run test
     - run: npm run build
