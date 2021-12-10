@@ -18,15 +18,22 @@ export const rskTestnetRpcUrl: RPCUrls = {
 
 export const rskRpcUrls: RPCUrls = Object.assign({}, rskMainnetRpcUrl, rskTestnetRpcUrl)
 
-const rifTrezorOptions: {
-  manifestEmail: string;
-  manifestAppUrl: string; // TODO: export this type
-} = {
+export interface rifTrezorOptions {
+  manifestEmail: string
+  manifestAppUrl: string
+}
+
+export interface rloginOptions {
+  trezor?: rifTrezorOptions
+  portis?: string
+}
+
+const defaultTrezorOptions:rifTrezorOptions = {
   manifestEmail: 'info@iovlabs.org',
   manifestAppUrl: 'https://rifos.org'
 }
 
-export const createRLogin = (rpcUrls = rskRpcUrls, trezorOptions = rifTrezorOptions) => {
+export const createRLogin = (rpcUrls = rskRpcUrls, rloginOptions?: rloginOptions) => {
   const providerOptions = Object.assign({
     walletconnect: {
       package: WalletConnectProvider,
@@ -39,14 +46,14 @@ export const createRLogin = (rpcUrls = rskRpcUrls, trezorOptions = rifTrezorOpti
     'custom-dcent': dcentProviderOptions,
     'custom-trezor': {
       ...trezorProviderOptions,
-      options: trezorOptions
+      options: rloginOptions?.trezor || defaultTrezorOptions
     }
   }, rpcUrls[31]
     ? {
         portis: {
           package: Portis,
           options: {
-            id: 'bb40ce05-67d3-48d0-85ca-92536952f38e',
+            id: rloginOptions?.portis || '',
             network: {
               nodeUrl: rpcUrls[31],
               chainId: 31
