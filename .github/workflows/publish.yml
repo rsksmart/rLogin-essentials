@@ -18,6 +18,7 @@ jobs:
       with:
         node-version: 14.x
         registry-url: https://registry.npmjs.org/
+    - run: sed -i 's/ssh:/https:/g' ./package-lock.json # avoid issue caused by using ssh from github actions
     - run: npm install
     - run: npm run build
     - run: npm publish --access public
