@@ -2,6 +2,10 @@
 import { createRLogin } from '../src'
 import * as RLogin from '@rsksmart/rlogin'
 
+jest.mock('@rsksmart/rlogin-dcent-provider', () => ({
+  DCentProvider: () => ({})
+}))
+
 describe('createRLogin', () => {
   const rpcUrlsMock = jest.fn()
   const supportedChainsMock = jest.fn()
