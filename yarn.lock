@@ -1307,10 +1307,10 @@
     ethjs-provider-http "^0.1.6"
     ethjs-query "^0.3.8"
 
-"@rsksmart/rlogin-ledger-provider@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.npmjs.org/@rsksmart/rlogin-ledger-provider/-/rlogin-ledger-provider-1.0.5.tgz"
-  integrity sha512-Rb1FhCBFzpmAvpSQzfUbg+J50Wd0Hp0/r+M5Q6zrA0HWT3Z0L/xHbTS4TQzqhsCJ2L4CmUXUA7G0dAsOO4CgNw==
+"@rsksmart/rlogin-ledger-provider@^1.0.5-alpha":
+  version "1.0.5-alpha"
+  resolved "https://registry.npmjs.org/@rsksmart/rlogin-ledger-provider/-/rlogin-ledger-provider-1.0.5-alpha.tgz"
+  integrity sha512-KEygNS5BRvrwTrdKC5vp3JzePQjNETme+hOk0CkRTMeLslc+1MI10HmBG+8U2KDPbmGrMHZAtf9uwsj4BSYNHA==
   dependencies:
     "@ledgerhq/hw-app-eth" "^6.42.1"
     "@ledgerhq/hw-transport-webhid" "^6.28.4"
