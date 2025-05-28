@@ -1,6 +1,6 @@
 {
   "name": "@rsksmart/rlogin-essentials",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "rLogin essentials",
   "main": "dist/index.js",
   "declarations": "dist/index.d.ts",
@@ -47,8 +47,8 @@
     "@portis/web3": "^4.0.6",
     "@rsksmart/rlogin": "1.4.1",
     "@rsksmart/rlogin-dcent-provider": "^1.0.1",
-    "@rsksmart/rlogin-ledger-provider": "^1.0.2",
-    "@rsksmart/rlogin-trezor-provider": "^1.0.2",
+    "@rsksmart/rlogin-ledger-provider": "^1.0.5-alpha",
+    "@rsksmart/rlogin-trezor-provider": "^1.0.6",
     "@walletconnect/web3-provider": "^1.6.6"
   }
 }
