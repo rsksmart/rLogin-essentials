@@ -1,6 +1,6 @@
 {
   "name": "@rsksmart/rlogin-essentials",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "rLogin essentials",
   "main": "dist/index.js",
   "declarations": "dist/index.d.ts",
